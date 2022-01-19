@@ -48,6 +48,10 @@ yarn add react-native-customized-box
 
 #### 📖 Below we provide examples with code how to use!
 
+```jsx
+import CustomBox from "react-native-customized-box";
+```
+
 #### ► Example - 1
 
 > → Box fully customizable
@@ -59,13 +63,13 @@ yarn add react-native-customized-box
 > **Code Snippet ↓**
 
 ```jsx
-      <CustomInput
+      <CustomBox
         placeholder={"Username"}
         boxColor={"dodgerblue"}
         focusColor={"#33ff00"}
         boxStyle={{ borderRadius: 40, borderWidth: 2 }}
       />
-      <CustomInput
+      <CustomBox
         placeholder={"Password"}
         toggle={true}
         boxColor={"dodgerblue"}
@@ -87,8 +91,8 @@ yarn add react-native-customized-box
 > **Code Snippet ↓**
 
 ```jsx
-      <CustomInput placeholder={"Username"} />
-      <CustomInput placeholder={"Password"} toggle={true} />
+      <CustomBox placeholder={"Username"} />
+      <CustomBox placeholder={"Password"} toggle={true} />
 ```
 
 <!--  -->
@@ -104,12 +108,12 @@ yarn add react-native-customized-box
 > **Code Snippet ↓**
 
 ```jsx
-      <CustomInput
+      <CustomBox
         placeholder={"Username"}
         boxColor={"dodgerblue"}
         focusColor={"#33ff00"}
       />
-      <CustomInput
+      <CustomBox
         placeholder={"Password"}
         toggle={true}
         boxColor={"dodgerblue"}
@@ -130,7 +134,7 @@ yarn add react-native-customized-box
 > **Code Snippet ↓**
 
 ```jsx
-      <CustomInput
+      <CustomBox
         placeholder={"Username"}
         boxColor={"dodgerblue"}
         focusColor={"#33ff00"}
@@ -147,7 +151,7 @@ yarn add react-native-customized-box
           text: "*This is Required",
         }}
       />
-      <CustomInput
+      <CustomBox
         placeholder={"Password"}
         toggle={true}
         boxColor={"dodgerblue"}
@@ -162,7 +166,7 @@ yarn add react-native-customized-box
           },
         }}
         requiredConfig={{
-          text: "*Add Custom Message and decoreate your own",
+          text: <Text>*Add Custom Message and decoreate your own</Text>,
           style: { textAlign: "center", textDecorationLine: "underline" },
         }}
       />
